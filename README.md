@@ -1,6 +1,6 @@
 # Project Template
 
-> **Language:** **English** | [한국어](README_KO.md)
+> **Language:** **English** | [한국어](README.kr.md)
 
 A standardized documentation template repository for the kcenon C++ ecosystem projects.
 
@@ -39,7 +39,7 @@ cd project-template
 ```
 project-template/
 ├── README.md                    # This file (usage guide)
-├── README_KO.md                 # Korean usage guide
+├── README.kr.md                 # Korean usage guide
 │
 ├── templates/                   # Document templates
 │   ├── README.template.md       # Main README template
@@ -142,6 +142,31 @@ Templates use `{{VARIABLE_NAME}}` syntax for substitution:
 | 🏗️ | Architecture | Modular, structural, design |
 | 🛡️ | Production Grade | Tested, reliable, stable |
 | 🌐 | Cross-Platform | Multi-platform, universal |
+
+### Localization File Naming Convention
+
+Use `.kr.md` suffix for Korean translations instead of `_KO.md`:
+
+| Pattern | Example | Description |
+|---------|---------|-------------|
+| `*.kr.md` | `README.kr.md` | Korean translation of `README.md` |
+| `*.kr.md` | `QUICK_START.kr.md` | Korean translation of `QUICK_START.md` |
+
+**Rationale**:
+- **Consistency**: Follows common localization patterns (e.g., `.en.md`, `.ja.md`)
+- **Clarity**: Clear separation between filename and language suffix
+- **Sorting**: Files sort together alphabetically (`README.kr.md` near `README.md`)
+
+**Migration**: If your project uses `_KO.md` suffix, rename files:
+```bash
+# Rename all _KO.md files to .kr.md
+find ./docs -name "*_KO.md" | while read f; do
+  mv "$f" "${f/_KO.md/.kr.md}"
+done
+
+# Update all references
+find . -name "*.md" -exec sed -i '' 's/_KO\.md/.kr.md/g' {} \;
+```
 
 ### docs/ Directory Standard
 
