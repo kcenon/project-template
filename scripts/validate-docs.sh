@@ -126,7 +126,7 @@ done
 
 # Check optional but recommended files
 RECOMMENDED_FILES=(
-    "README_KO.md"
+    "README.kr.md"
     "CHANGELOG.md"
     "CODE_OF_CONDUCT.md"
 )

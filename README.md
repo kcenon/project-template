@@ -43,7 +43,7 @@ project-template/
 │
 ├── templates/                   # Document templates
 │   ├── README.template.md       # Main README template
-│   ├── README_KO.template.md    # Korean README template
+│   ├── README.kr.template.md    # Korean README template
 │   └── CHANGELOG.template.md    # Changelog template
 │
 ├── docs-structure/              # Standard docs/ structure

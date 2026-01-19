@@ -144,9 +144,9 @@ if [[ -f "$TEMPLATE_DIR/templates/README.template.md" ]]; then
     log_success "Created README.md"
 fi
 
-if [[ -f "$TEMPLATE_DIR/templates/README_KO.template.md" ]]; then
-    process_template "$TEMPLATE_DIR/templates/README_KO.template.md" "$PROJECT_NAME/README_KO.md"
-    log_success "Created README_KO.md"
+if [[ -f "$TEMPLATE_DIR/templates/README.kr.template.md" ]]; then
+    process_template "$TEMPLATE_DIR/templates/README.kr.template.md" "$PROJECT_NAME/README.kr.md"
+    log_success "Created README.kr.md"
 fi
 
 if [[ -f "$TEMPLATE_DIR/templates/CHANGELOG.template.md" ]]; then

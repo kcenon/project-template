@@ -235,7 +235,7 @@ apply_github() {
 apply_readme() {
     log_info "Applying README templates..."
 
-    for template in README.template.md README_KO.template.md CHANGELOG.template.md; do
+    for template in README.template.md README.kr.template.md CHANGELOG.template.md; do
         if [[ -f "$TEMPLATE_DIR/templates/$template" ]]; then
             # Copy as .template.md for reference
             target_name="${template%.template.md}.template.md"
