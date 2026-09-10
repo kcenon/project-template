@@ -1,3 +1,5 @@
+> Status: archived 2026-09. No further maintenance; kept for reference.
+
 # Project Template
 
 > **Language:** **English** | [한국어](README.kr.md)
